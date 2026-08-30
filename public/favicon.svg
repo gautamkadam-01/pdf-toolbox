@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="pdfRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#BE123C" />
+    </linearGradient>
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#pdfRed)" />
+  <!-- Document Shape -->
+  <path d="M20 16C20 14.8954 20.8954 14 22 14H36L44 22V48C44 49.1046 43.1046 50 42 50H22C20.8954 50 20 49.1046 20 48V16Z" fill="url(#docGrad)" />
+  <!-- Document Fold Corner -->
+  <path d="M36 14V22H44L36 14Z" fill="#CBD5E1" />
+  <!-- PDF Toolbox Ribbon / Text line -->
+  <rect x="25" y="27" width="14" height="3" rx="1.5" fill="#EF4444" />
+  <rect x="25" y="33" width="14" height="2.5" rx="1.25" fill="#94A3B8" />
+  <rect x="25" y="38.5" width="9" height="2.5" rx="1.25" fill="#94A3B8" />
+  <!-- Mini Sparkle / Tool Wrench Indicator -->
+  <circle cx="43" cy="43" r="5.5" fill="#F59E0B" stroke="#BE123C" stroke-width="1.5" />
+  <path d="M43 40.5V45.5M40.5 43H45.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+</svg>

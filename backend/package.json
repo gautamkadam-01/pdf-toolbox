@@ -1,0 +1,39 @@
+{
+  "name": "pdf-toolbox-backend",
+  "version": "1.0.0",
+  "description": "Backend API service and processing foundation for PDF Toolbox",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node test/foundation.test.js && node test/phase2.test.js && node test/phase3.test.js && node test/wordToPdfSuite.test.js"
+  },
+  "keywords": [
+    "pdf",
+    "pdf-toolbox",
+    "express",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jpeg-js": "^0.4.4",
+    "jszip": "^3.10.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.2.108",
+    "mammoth": "^1.9.0",
+    "puppeteer": "^25.8.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PDF Toolbox",
+  "description": "A modern, professional online PDF utility platform to convert, edit, organize, compress, and secure PDF documents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
