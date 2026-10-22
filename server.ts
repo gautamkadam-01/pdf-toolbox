@@ -3,14 +3,14 @@ import path from 'path';
 import { createServer as createViteServer } from 'vite';
 import { createRequire } from 'module';
 
-const require = createRequire(import.meta.url);
+const require = createRequire(path.join(process.cwd(), 'server.ts'));
 const backendApp = require('./backend/src/app.js');
 const storageService = require('./backend/src/services/storageService.js');
 const logger = require('./backend/src/utils/logger.js');
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 5000;
 
   // Initialize temporary storage directories
   storageService.ensureDirectories();
